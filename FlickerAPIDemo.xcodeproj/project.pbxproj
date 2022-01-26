@@ -14,6 +14,8 @@
 		128F1C5B27A0F5B400987B81 /* FlickerAPIDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 128F1C5927A0F5B400987B81 /* FlickerAPIDemo.xcdatamodeld */; };
 		128F1C5D27A0F5B500987B81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 128F1C5C27A0F5B500987B81 /* Assets.xcassets */; };
 		128F1C6027A0F5B500987B81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 128F1C5E27A0F5B500987B81 /* LaunchScreen.storyboard */; };
+		128F1C6E27A12E2F00987B81 /* ShowImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128F1C6C27A12E2F00987B81 /* ShowImageViewController.swift */; };
+		128F1C6F27A12E2F00987B81 /* ShowImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 128F1C6D27A12E2F00987B81 /* ShowImageViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		128F1C5C27A0F5B500987B81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		128F1C5F27A0F5B500987B81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		128F1C6127A0F5B500987B81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		128F1C6C27A12E2F00987B81 /* ShowImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowImageViewController.swift; sourceTree = "<group>"; };
+		128F1C6D27A12E2F00987B81 /* ShowImageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShowImageViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,7 @@
 		128F1C6827A0F67E00987B81 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				128F1C6B27A12E0800987B81 /* ShowImageViewController */,
 				128F1C6A27A0F69600987B81 /* MainViewController */,
 			);
 			path = ViewController;
@@ -100,6 +105,15 @@
 				128F1C5627A0F5B400987B81 /* Main.storyboard */,
 			);
 			path = MainViewController;
+			sourceTree = "<group>";
+		};
+		128F1C6B27A12E0800987B81 /* ShowImageViewController */ = {
+			isa = PBXGroup;
+			children = (
+				128F1C6C27A12E2F00987B81 /* ShowImageViewController.swift */,
+				128F1C6D27A12E2F00987B81 /* ShowImageViewController.xib */,
+			);
+			path = ShowImageViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +177,7 @@
 				128F1C6027A0F5B500987B81 /* LaunchScreen.storyboard in Resources */,
 				128F1C5D27A0F5B500987B81 /* Assets.xcassets in Resources */,
 				128F1C5827A0F5B400987B81 /* Main.storyboard in Resources */,
+				128F1C6F27A12E2F00987B81 /* ShowImageViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +192,7 @@
 				128F1C5127A0F5B400987B81 /* AppDelegate.swift in Sources */,
 				128F1C5B27A0F5B400987B81 /* FlickerAPIDemo.xcdatamodeld in Sources */,
 				128F1C5327A0F5B400987B81 /* SceneDelegate.swift in Sources */,
+				128F1C6E27A12E2F00987B81 /* ShowImageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

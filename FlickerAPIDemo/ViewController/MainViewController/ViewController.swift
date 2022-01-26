@@ -62,7 +62,8 @@ class ViewController: UIViewController {
     }
     
     @IBAction func searchButtonClick(_ sender: UIButton) {
-        
+        let controller = ShowImageViewController()
+        self.navigationController?.pushViewController(controller, animated: true)
     }
 }
 
