@@ -16,6 +16,7 @@
 		128F1C6027A0F5B500987B81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 128F1C5E27A0F5B500987B81 /* LaunchScreen.storyboard */; };
 		128F1C6E27A12E2F00987B81 /* ShowImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128F1C6C27A12E2F00987B81 /* ShowImageViewController.swift */; };
 		128F1C6F27A12E2F00987B81 /* ShowImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 128F1C6D27A12E2F00987B81 /* ShowImageViewController.xib */; };
+		128F1C7227A135C900987B81 /* NetworkStruct-FlickerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128F1C7127A135C900987B81 /* NetworkStruct-FlickerData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		128F1C6127A0F5B500987B81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		128F1C6C27A12E2F00987B81 /* ShowImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowImageViewController.swift; sourceTree = "<group>"; };
 		128F1C6D27A12E2F00987B81 /* ShowImageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShowImageViewController.xib; sourceTree = "<group>"; };
+		128F1C7127A135C900987B81 /* NetworkStruct-FlickerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkStruct-FlickerData.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 		128F1C6927A0F68800987B81 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				128F1C7027A1358F00987B81 /* NetworkStruct */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -114,6 +117,14 @@
 				128F1C6D27A12E2F00987B81 /* ShowImageViewController.xib */,
 			);
 			path = ShowImageViewController;
+			sourceTree = "<group>";
+		};
+		128F1C7027A1358F00987B81 /* NetworkStruct */ = {
+			isa = PBXGroup;
+			children = (
+				128F1C7127A135C900987B81 /* NetworkStruct-FlickerData.swift */,
+			);
+			path = NetworkStruct;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,6 +203,7 @@
 				128F1C5127A0F5B400987B81 /* AppDelegate.swift in Sources */,
 				128F1C5B27A0F5B400987B81 /* FlickerAPIDemo.xcdatamodeld in Sources */,
 				128F1C5327A0F5B400987B81 /* SceneDelegate.swift in Sources */,
+				128F1C7227A135C900987B81 /* NetworkStruct-FlickerData.swift in Sources */,
 				128F1C6E27A12E2F00987B81 /* ShowImageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

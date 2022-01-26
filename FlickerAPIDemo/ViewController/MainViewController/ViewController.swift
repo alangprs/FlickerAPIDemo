@@ -13,10 +13,19 @@ class ViewController: UIViewController {
     @IBOutlet weak var amountTextField: UITextField!
     @IBOutlet weak var searButton: UIButton!
     
+    var getImageData: [Photo] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         uiSetup()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        getNetworkData()
+        print("測試 getImage", getImageData)
     }
     
 
@@ -46,6 +55,26 @@ class ViewController: UIViewController {
             searButton.alpha = 1
         } else {
             searButton.alpha = 0.3
+        }
+    }
+    
+    //MARK: - 打api
+    
+    func getNetworkData() {
+        if let url = URL(string: "https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=92f6eae65389a44f4072b37292cb739a&text=%E5%B0%8F%E8%B2%93&format=json&nojsoncallback=1&auth_token=72157720830939436-6ce9fe63723beaa2&api_sig=ce9997ff237b49b36271abb46c1fc735") {
+            URLSession.shared.dataTask(with: url) { data, response, error in
+                if let data = data {
+                    do {
+                        let searchResponse = try JSONDecoder().decode(SearchResponse.self, from: data)
+                        self.getImageData = searchResponse.photos.photo
+                        
+                    } catch {
+                        print("ViewController getNetworkData get searchResponse catch", error)
+                    }
+                } else {
+                    print("ViewController getNetworkData get searchResponse error")
+                }
+            }.resume()
         }
     }
     

@@ -11,6 +11,7 @@ class ShowImageViewController: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
     
+    var showImageData: [Photo] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
